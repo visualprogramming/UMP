@@ -1,0 +1,12 @@
+/*
+	Universal Media Player (AKA Unified Player Viewer)
+	Stylesheet v1.0
+*/
+
+#wrapper
+{
+	border: 1px solid #000;
+	margin: 0 auto;
+	padding: 5px;
+	width: 500px;
+}
