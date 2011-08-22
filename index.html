@@ -11,10 +11,19 @@
 		
 		<div id="ump">
 			<video width="320" height="240" controls="controls">
-				<source src="badger.ogg" type="video/mp4" /> <!-- MPEG4 for Safari -->
-				<source src="badger.ogg" type="video/ogg" /> <!-- Ogg Theora for Firefox -->
+				<!-- MPEG4 for Safari -->
+				<source src="badger.ogg" type="video/mp4" />
+				<!--
+					Ogg Theora for Firefox .
+					Ogg doesn't encapsulate the duration of media.
+					X-Content-Duration header provides the duration of the video in seconds (1m32.6s = 92.6)
+				-->
+				<source src="badger.ogg" type="video/ogg" />
 				
-				Your browser does not support the <code>Video</code> tag.
+				<!--
+					Your browser does not support the <code>Video</code> tag.
+					Normally this is the output, but will inject Flash upon fail via jQuery.
+				-->
 			</video>
 		</div>
 		
